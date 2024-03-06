@@ -6,7 +6,6 @@ import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
 import 'package:token_mechansim/dio/base_exception.dart';
 
-
 class DIOHelper {
   DIOHelper._init();
   static DIOHelper? _instance;
@@ -40,7 +39,6 @@ class DIOHelper {
 
     debugPrint("Http Log: Server error test :=> $errorMessage");
   }
-
 
   DioErrorHttpException onDioError(DioException exception) {
     logDioError(exception);
@@ -109,7 +107,6 @@ class DIOHelper {
     onRequest: (RequestOptions options,
         RequestInterceptorHandler requestInterceptorHandler) async {
       _logRequest(options);
-      //"token: ${ObjectUtils.getLastIndexString(options.headers["authorization"])}");
       requestInterceptorHandler.next(options);
     },
     onResponse: (Response response,

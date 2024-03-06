@@ -5,7 +5,7 @@ import 'base_client.dart';
 import 'base_exception.dart';
 import 'dio_helper.dart';
 
-abstract class BaseApiService {
+class BaseApiService {
   late Dio dio;
 
   BaseApiService({Dio? dio}) {
