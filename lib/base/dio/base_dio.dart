@@ -2,7 +2,7 @@ import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
 
 import 'base_client.dart';
-import 'base_exception.dart';
+import 'dio_exception.dart';
 import 'dio_helper.dart';
 
 class BaseApiService {

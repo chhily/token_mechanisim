@@ -4,7 +4,7 @@ import 'dart:io';
 
 import 'package:dio/dio.dart';
 import 'package:flutter/foundation.dart';
-import 'package:token_mechansim/dio/base_exception.dart';
+import 'dio_exception.dart';
 
 class DIOHelper {
   DIOHelper._init();

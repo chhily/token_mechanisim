@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../dio/base_dio.dart';
+import '../base/dio/base_dio.dart';
 
 class LoginViewPage extends StatefulWidget {
   const LoginViewPage({super.key});
